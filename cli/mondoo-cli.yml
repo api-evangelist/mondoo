@@ -1,0 +1,48 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mondoohq/cnspec
+clis:
+- name: cnspec
+  description: >-
+    Open-source, cloud-native security scanner and policy-as-code engine. Assesses
+    infrastructure for vulnerabilities and misconfigurations across cloud,
+    Kubernetes, containers, registries, servers, endpoints, SaaS, IaC, APIs, and
+    more, using cnspec policies written in MQL.
+  repo: https://github.com/mondoohq/cnspec
+  docs: https://mondoo.com/cnspec
+  license: BUSL-1.1
+  install:
+  - bash -c "$(curl -sSL https://install.mondoo.com/sh)"
+  - brew install mondoohq/mondoo/cnspec
+  commands:
+  - name: scan
+    summary: Scan local and remote targets (local, docker, aws, k8s, github, ...) for misconfigurations and vulnerabilities.
+  - name: shell
+    summary: Interactive MQL shell against a target.
+  - name: policy
+    summary: Manage and inspect cnspec policies.
+  - name: bundle
+    summary: Create, validate, and format policy bundles.
+  - name: vuln
+    summary: Run a vulnerability scan against a target.
+  - name: mcp
+    summary: Run cnspec's MCP server for agent access.
+- name: cnquery
+  description: >-
+    Open-source, cloud-native, graph-based asset inventory and query tool. Uses
+    MQL to query configuration and state across hundreds of providers.
+  repo: https://github.com/mondoohq/cnquery
+  docs: https://mondoo.com/cnquery
+  license: BUSL-1.1
+  install:
+  - bash -c "$(curl -sSL https://install.mondoo.com/sh)"
+  - brew install mondoohq/mondoo/cnquery
+  commands:
+  - name: shell
+    summary: Interactive MQL shell against a provider/target (aws, azure, k8s, docker, linux, ms365, mcp, ...).
+  - name: run
+    summary: Run an MQL query against a target and print results.
+  - name: scan
+    summary: Collect an asset inventory / run query packs.
+  - name: mcp
+    summary: Expose cnquery as an MCP server (stdio or http).

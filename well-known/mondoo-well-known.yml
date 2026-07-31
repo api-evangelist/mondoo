@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of Mondoo API + web hosts /.well-known/*
+hosts:
+- host: https://us.api.mondoo.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: mondoo-us-openid-configuration.json
+    note: >-
+      OIDC discovery for the US Security Token Service (issuer
+      https://sts.us.mondoo.com); RS256 id tokens, scope openid.
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://eu.api.mondoo.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: mondoo-eu-openid-configuration.json
+    note: >-
+      OIDC discovery for the EU Security Token Service (issuer
+      https://sts.eu.mondoo.com); RS256 id tokens, scope openid.
+- host: https://mondoo.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404

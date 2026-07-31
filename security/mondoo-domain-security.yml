@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: mondoo.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 15 01:13:11 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: us.api.mondoo.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 21 10:30:39 2026 GMT
+  hsts: null
+domains:
+- domain: mondoo.com
+  dnssec: true
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

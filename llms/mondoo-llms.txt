@@ -1,0 +1,59 @@
+# Mondoo
+
+> Mondoo provides Agentic Vulnerability Management - AI-powered security that discovers, prioritizes, and remediates vulnerabilities automatically. We don't just tell you what's wrong. We actually fix it.
+
+Mondoo is trusted by Fortune 50 companies including Deutsche Telekom and major US automotive manufacturers for Agentic Vulnerability Management at scale.
+
+## Platform
+
+- [Mondoo Platform](https://mondoo.com/platform): Unified security platform - intelligent AI agents that prioritize by business impact, remediate at machine speed, and orchestrate workflows end-to-end
+- [Why Mondoo](https://mondoo.com/why-mondoo): Three pillars - Unified, AI-Native, Transparent
+- [Integrations](https://mondoo.com/integrations): 100+ integrations for cloud, containers, CI/CD, SaaS, and more
+- [Pricing](https://mondoo.com/pricing): Pricing tiers and plans
+
+## Solutions
+
+- [Agentic Vulnerability Management](https://mondoo.com/solutions/agentic-managed-vulnerability-service): AI-powered vulnerability detection and automated remediation
+- [Compliance Automation](https://mondoo.com/solutions/compliance): SOC 2, ISO 27001, CIS, HIPAA, PCI DSS, GDPR, NIS2, and more
+- [Container Security](https://mondoo.com/solutions/container-security): Docker and Kubernetes security scanning
+- [Network Device Security](https://mondoo.com/solutions/network-device-security): Router, switch, and firewall security
+- [Security Benchmarks](https://mondoo.com/solutions/benchmarks): CIS Benchmarks and DISA STIGs
+- [Unified Policy as Code](https://mondoo.com/solutions/unified-policy-as-code): Define once, enforce everywhere
+
+## Industry Solutions
+
+- [Healthcare](https://mondoo.com/solutions/healthcare): HIPAA compliance and patient data protection
+- [Financial Services](https://mondoo.com/solutions/financial-services): SOC 2, PCI DSS regulatory compliance
+- [Manufacturing](https://mondoo.com/solutions/manufacturing): OT/IT security convergence
+
+## Tools
+
+- [cnquery](https://mondoo.com/cnquery): Open-source infrastructure query tool using MQL
+- [cnspec](https://mondoo.com/cnspec): Open-source security scanner and policy engine
+- [xgrep](https://mondoo.com/xgrep): AI-native SAST to find and fix vulnerabilities fast
+- [skillcheck](https://mondoo.com/skillcheck): Scan your machine for malicious AI agent skills
+- [GitHub](https://github.com/mondoohq): Open source repositories
+
+## Resources
+
+- [Documentation](https://mondoo.com/docs): Platform and API documentation
+- [Blog](https://mondoo.com/blog): Security insights and product updates
+- [Learning Center](https://mondoo.com/learning): Educational articles on security concepts
+- [Vulnerability Intelligence](https://mondoo.com/vulnerability-intelligence): CVE database and security advisories
+
+## Company
+
+- [About](https://mondoo.com/about): Mission, team, and company information
+- [Careers](https://mondoo.com/careers): Job opportunities
+- [Contact](https://mondoo.com/contact): Get in touch
+- [Request Demo](https://mondoo.com/demo): Schedule a demo
+
+## Optional
+
+- [Case Studies](https://mondoo.com/customers): Customer success stories
+- [Partners](https://mondoo.com/partners): Partner program
+- [Services](https://mondoo.com/services): Professional services
+- [News](https://mondoo.com/news): Press releases and media coverage
+- [Events](https://mondoo.com/events): Conferences and meetups
+- [Videos](https://mondoo.com/videos): Video tutorials and demos
+- [Full Documentation](https://mondoo.com/llms-full.txt): Complete LLM context file

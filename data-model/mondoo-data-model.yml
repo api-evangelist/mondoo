@@ -1,0 +1,48 @@
+generated: '2026-07-20'
+method: generated
+source: >-
+  https://github.com/mondoohq/mondoo-go +
+  https://mondoo.com/docs/platform/maintain/access/service_accounts/
+note: >-
+  The Mondoo Platform API is GraphQL (no OpenAPI to derive from). These are the
+  core platform entities as documented in the Go SDK and platform docs; field-level
+  relationships should be confirmed against the live GraphQL schema.
+entities:
+- name: Organization
+  description: Top-level tenant; contains spaces and org-scoped service accounts.
+- name: Space
+  description: Workspace within an organization holding assets, integrations, and policies.
+- name: Asset
+  description: A scanned resource (cloud account, host, container, k8s object, SaaS, etc.).
+- name: Integration
+  description: A configured connection Mondoo uses to discover and scan assets.
+- name: Policy
+  description: A cnspec policy-as-code bundle (MQL) evaluated against assets.
+- name: Vulnerability
+  description: A CVE/advisory finding surfaced against an asset.
+- name: ServiceAccount
+  description: Programmatic credential scoped to a space or organization with a role.
+relationships:
+- from: Organization
+  to: Space
+  type: has_many
+- from: Space
+  to: Asset
+  type: has_many
+- from: Space
+  to: Integration
+  type: has_many
+- from: Space
+  to: Policy
+  type: has_many
+- from: Asset
+  to: Vulnerability
+  type: has_many
+- from: ServiceAccount
+  to: Space
+  type: belongs_to
+  via: scope
+- from: ServiceAccount
+  to: Organization
+  type: belongs_to
+  via: scope

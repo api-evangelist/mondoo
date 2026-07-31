@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mondoohq/mondoo-go
+api_style: graphql
+authentication:
+  style: bearer-token
+  header: 'Authorization: Bearer <service-account-token>'
+  detail: authentication/mondoo-authentication.yml
+endpoint:
+  us: https://us.api.mondoo.com/query
+  eu: https://eu.api.mondoo.com/query
+  note: >-
+    Single GraphQL endpoint per region. Operations are GraphQL queries, mutations,
+    and subscriptions (the Go SDK supports subscriptions over the same endpoint).
+pagination:
+  style: graphql-cursor
+  note: >-
+    Collection fields follow GraphQL cursor-connection conventions (edges/nodes +
+    pageInfo). Confirm exact argument names per field in the schema.
+idempotency:
+  supported: false
+  note: >-
+    No documented idempotency-key mechanism; mutations are GraphQL operations
+    without a published idempotency contract.
+versioning:
+  style: continuous-schema
+  deprecation: GraphQL @deprecated schema directive
+errors:
+  envelope: graphql-errors
+  note: >-
+    Errors are returned in the standard GraphQL top-level "errors" array
+    (message + path + extensions) alongside partial "data".
+regions:
+- us
+- eu
+cross_links:
+  authentication: authentication/mondoo-authentication.yml
+  lifecycle: lifecycle/mondoo-lifecycle.yml
+  well_known: well-known/mondoo-well-known.yml

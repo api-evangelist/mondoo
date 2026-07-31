@@ -1,0 +1,48 @@
+generated: '2026-07-20'
+method: searched
+source: https://mondoo.com/docs/platform/maintain/access/service_accounts/
+docs: https://mondoo.com/docs/platform/maintain/access/service_accounts/
+summary:
+  types:
+  - bearer-token
+  - oidc
+  token_model: service-account-api-token
+  regions:
+  - us
+  - eu
+schemes:
+- name: ServiceAccountToken
+  type: http
+  scheme: bearer
+  description: >-
+    Programmatic access to the Mondoo Platform GraphQL API uses service account
+    API tokens. Service accounts are created at space or organization scope and
+    carry a role. Credentials are issued as JSON (or base64-encoded JSON) and
+    supplied to cnspec/cnquery via --config or MONDOO_CONFIG_PATH, and to the Go
+    SDK via option.WithAPIToken.
+  sources:
+  - https://mondoo.com/docs/platform/maintain/access/service_accounts/
+- name: OIDC-STS
+  type: openIdConnect
+  description: >-
+    Each region runs a Security Token Service exposing OIDC discovery at
+    /.well-known/openid-configuration (issuers https://sts.us.mondoo.com and
+    https://sts.eu.mondoo.com). RS256-signed id tokens, scope "openid".
+  openid_configuration:
+  - https://us.api.mondoo.com/.well-known/openid-configuration
+  - https://eu.api.mondoo.com/.well-known/openid-configuration
+roles:
+- name: Viewer
+  description: Read-only browsing.
+- name: Editor
+  description: Make modifications except deleting the space.
+- name: Owner
+  description: Make all changes except reporting scan results.
+- name: Agent
+  description: Execute policies and report scan results.
+scopes_of_access:
+- space
+- organization
+endpoints:
+  us: https://us.api.mondoo.com/query
+  eu: https://eu.api.mondoo.com/query

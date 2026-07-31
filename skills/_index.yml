@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mondoohq/skills
+note: >-
+  Agent Skills published by Mondoo (Apache-2.0) as a Claude Code / Cursor plugin
+  and Gemini extension. Saved verbatim from the mondoohq/skills repository. Each
+  file is the provider's own SKILL.md.
+skills:
+- file: mondoo-mondoo-mql.md
+  name: mondoo-mql
+  description: >-
+    Use when writing MQL (Mondoo Query Language) queries, working with Mondoo MCP
+    tools, or developing security policies.
+- file: mondoo-secure-coding.md
+  name: secure-coding
+  description: >-
+    Review code for security vulnerabilities and provide secure coding guidance
+    across Go, Python, JavaScript, Java, Ruby, C#, and Swift.
+- file: mondoo-xgrep-fix.md
+  name: xgrep-fix
+  description: >-
+    Fixes a whole set of xgrep findings (or triage-confirmed true positives) in
+    one pass via the verify/apply harness.
+- file: mondoo-xgrep-inspect.md
+  name: xgrep-inspect
+  description: >-
+    Investigates and navigates source code using xgrep's AST-powered code
+    intelligence.
+- file: mondoo-xgrep-remediate.md
+  name: xgrep-remediate
+  description: >-
+    Fixes a confirmed xgrep finding safely using the verify/apply harness.
+- file: mondoo-xgrep-rule-creator.md
+  name: xgrep-rule-creator
+  description: >-
+    Creates custom xgrep rules for detecting security vulnerabilities, bug
+    patterns, and code anti-patterns.
+- file: mondoo-xgrep-triage.md
+  name: xgrep-triage
+  description: >-
+    Investigates and classifies xgrep scan findings using code graph analysis for
+    call chain navigation and dataflow tracing.

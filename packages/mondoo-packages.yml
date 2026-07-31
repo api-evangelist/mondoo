@@ -1,0 +1,58 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mondoohq
+packages:
+- language: go
+  registry: pkg.go.dev
+  name: go.mondoo.com/mondoo-go
+  url: https://pkg.go.dev/go.mondoo.com/mondoo-go
+  repo: https://github.com/mondoohq/mondoo-go
+  install: go get go.mondoo.com/mondoo-go
+  official: true
+  kind: sdk
+  description: >-
+    Official Go client library for the Mondoo Platform GraphQL API (query assets,
+    integrations, vulnerability and policy reports; token-based auth). Beta.
+- language: go
+  registry: pkg.go.dev
+  name: go.mondoo.com/cnquery
+  url: https://pkg.go.dev/go.mondoo.com/cnquery
+  repo: https://github.com/mondoohq/cnquery
+  install: go install go.mondoo.com/cnquery/v11/apps/cnquery@latest
+  official: true
+  kind: cli
+  description: Open-source, cloud-native, graph-based infrastructure query tool using MQL.
+- language: go
+  registry: pkg.go.dev
+  name: go.mondoo.com/cnspec
+  url: https://pkg.go.dev/go.mondoo.com/cnspec
+  repo: https://github.com/mondoohq/cnspec
+  install: go install go.mondoo.com/cnspec/v11/apps/cnspec@latest
+  official: true
+  kind: cli
+  description: Open-source, cloud-native security scanner and policy-as-code engine built on cnquery.
+- language: hcl
+  registry: terraform-registry
+  name: mondoohq/mondoo
+  url: https://registry.terraform.io/providers/mondoohq/mondoo/latest
+  repo: https://github.com/mondoohq/terraform-provider-mondoo
+  install: 'terraform { required_providers { mondoo = { source = "mondoohq/mondoo" } } }'
+  official: true
+  kind: terraform-provider
+  description: Terraform provider for managing Mondoo Platform resources.
+- language: go
+  registry: pkg.go.dev
+  name: go.mondoo.com/mql
+  url: https://github.com/mondoohq/mql
+  repo: https://github.com/mondoohq/mql
+  install: go get go.mondoo.com/mql
+  official: true
+  kind: library
+  description: MQL — the open-source, graph-based query language behind cnquery and cnspec.
+install_methods:
+- name: Homebrew
+  command: brew install mondoohq/mondoo/cnquery
+  repo: https://github.com/mondoohq/homebrew-mondoo
+- name: install script
+  command: bash -c "$(curl -sSL https://install.mondoo.com/sh)"
+  repo: https://github.com/mondoohq/installer

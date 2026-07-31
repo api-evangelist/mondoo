@@ -1,8 +1,30 @@
 aid: mondoo
 name: Mondoo
-description: 'Mondoo is a company surfaced as a portfolio company of hv-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Mondoo is a cloud-native security and vulnerability risk management platform
+  built around "Agentic Vulnerability Management" — AI agents that discover,
+  prioritize by business impact, and automatically remediate vulnerabilities and
+  misconfigurations across cloud accounts, containers, Kubernetes, servers,
+  endpoints, SaaS products, network devices, and infrastructure-as-code. The
+  platform is built on the open-source cnquery infrastructure query tool and the
+  cnspec policy-as-code security scanner, both driven by MQL (the Mondoo Query
+  Language), and exposes a GraphQL Platform API for programmatic access to
+  assets, integrations, and vulnerability, policy, and compliance reports. Mondoo
+  ships official SDKs, a Terraform provider, cnquery/cnspec CLIs with an MCP
+  server interface, and packaged Agent Skills for MQL and secure coding.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://github.com/mondoohq.png
 url: https://raw.githubusercontent.com/api-evangelist/mondoo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +34,100 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Cybersecurity
-apis: []
+- Security
+- Vulnerability Management
+- Compliance
+- Cloud Security
+- Policy as Code
+- DevSecOps
+- GraphQL
+- SAST
+apis:
+- name: Mondoo Platform GraphQL API
+  description: >-
+    The Mondoo Platform API is a GraphQL API for programmatically querying assets,
+    configuring integrations, and fetching vulnerability, policy, and compliance
+    reports. Authentication is token-based via service accounts, with US and EU
+    regional endpoints.
+  humanURL: https://mondoo.com/docs
+  baseURL: https://us.api.mondoo.com/query
+  tags:
+  - GraphQL
+  - Security
+  - Vulnerability Management
+  properties:
+  - type: x-graphql-endpoint-eu
+    url: https://eu.api.mondoo.com/query
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: VulnerabilityDisclosure
+  url: security/mondoo-vulnerability-disclosure.yml
+- type: Security
+  url: https://github.com/mondoohq/.github/blob/main/SECURITY.md
+- type: DomainSecurity
+  url: security/mondoo-domain-security.yml
+- type: Website
+  url: https://mondoo.com
+- type: DeveloperPortal
+  url: https://mondoo.com/docs
+- type: Documentation
+  url: https://mondoo.com/docs
+- type: GettingStarted
+  url: https://mondoo.com/docs/platform/maintain/access/service_accounts/
+- type: GitHubOrganization
+  url: https://github.com/mondoohq
+- type: Blog
+  url: https://mondoo.com/blog
+- type: Support
+  url: https://mondoo.com/contact
+- type: Pricing
+  url: https://mondoo.com/pricing
+- type: SignUp
+  url: https://console.mondoo.com
+- type: Login
+  url: https://console.mondoo.com
+- type: TermsOfService
+  url: https://mondoo.com/terms
+- type: PrivacyPolicy
+  url: https://mondoo.com/privacy
+- type: LLMsTxt
+  url: llms/mondoo-llms.txt
+- type: Packages
+  url: packages/mondoo-packages.yml
+- type: SDKs
+  url: packages/mondoo-packages.yml
+- type: CLI
+  url: cli/mondoo-cli.yml
+- type: WellKnown
+  url: well-known/mondoo-well-known.yml
+- type: MCPServer
+  url: mcp/mondoo-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Authentication
+  url: authentication/mondoo-authentication.yml
+- type: Conventions
+  url: conventions/mondoo-conventions.yml
+- type: Conformance
+  url: conformance/mondoo-conformance.yml
+- type: Lifecycle
+  url: lifecycle/mondoo-lifecycle.yml
+- type: StatusPage
+  url: https://status.mondoo.com
+- type: ChangeLog
+  url: changelog/mondoo-changelog.yml
+- type: DataModel
+  url: data-model/mondoo-data-model.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 16
+  pass: local-v1

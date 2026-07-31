@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  live probes + https://mondoo.com/docs/platform/maintain/access/service_accounts/
+standards:
+- id: graphql
+  conforms: true
+  evidence: Platform API is a GraphQL endpoint (/query); official Go client uses typed GraphQL queries, mutations, and subscriptions.
+- id: oidc
+  conforms: true
+  evidence: Regional STS exposes /.well-known/openid-configuration (issuers sts.us.mondoo.com / sts.eu.mondoo.com), RS256, scope openid.
+- id: oauth2
+  conforms: partial
+  evidence: Token-based (service account) auth with an OIDC STS; no full OAuth2 authorization-code flow documented for the API.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: No /.well-known/security.txt served (404); responsible-disclosure policy published as GitHub SECURITY.md instead.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: GraphQL API uses the GraphQL top-level "errors" array, not RFC 9457 problem+json.
+- id: mcp
+  conforms: true
+  evidence: cnquery/cnspec expose a Model Context Protocol server for agent access.

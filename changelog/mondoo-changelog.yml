@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mondoohq/cnspec/releases
+scheme: semver
+note: >-
+  cnspec is Mondoo's flagship open-source scanner; its tagged GitHub releases are
+  the most reliable dated changelog for the Mondoo toolchain. The hosted Platform
+  evolves continuously without numbered API versions.
+current_version: v13.30.0
+entries:
+- version: v13.30.0
+  date: '2026-07-20'
+  source: https://github.com/mondoohq/cnspec/releases/tag/v13.30.0
+- version: v13.29.2
+  date: '2026-07-16'
+  source: https://github.com/mondoohq/cnspec/releases/tag/v13.29.2
+- version: v13.29.1
+  date: '2026-07-15'
+  source: https://github.com/mondoohq/cnspec/releases/tag/v13.29.1
+- version: v13.29.0
+  date: '2026-07-14'
+  source: https://github.com/mondoohq/cnspec/releases/tag/v13.29.0
+- version: v13.28.1
+  date: '2026-07-09'
+  source: https://github.com/mondoohq/cnspec/releases/tag/v13.28.1

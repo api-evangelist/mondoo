@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://github.com/mondoohq/cnquery
+server:
+  name: mondoo-cnquery
+  transport: stdio
+  also_available:
+  - transport: http
+    note: 'exposed via: mql shell mcp http http://localhost:8080/mcp'
+  description: >-
+    Mondoo exposes an MCP (Model Context Protocol) server through its open-source
+    cnquery / cnspec CLIs and the MQL shell. Agents can run it locally to perform
+    live MQL schema lookup, query validation, and infrastructure/security queries
+    against the same graph-based data fabric that powers cnquery and cnspec. The
+    packaged mondoo-mql Agent Skill (github.com/mondoohq/skills) documents using
+    these MCP tools for query development.
+  launch:
+  - cnquery mcp
+  - mql shell mcp http http://localhost:8080/mcp
+tools:
+- name: mql_schema_lookup
+  description: Look up available MQL resources, fields, and types from the live schema.
+  source: cnquery MCP server
+- name: mql_query_validate
+  description: Validate MQL query syntax before deployment in policies or packs.
+  source: cnquery MCP server
+- name: mql_run_query
+  description: Execute an MQL query against a connected asset/provider and return results.
+  source: cnquery MCP server
+references:
+- https://github.com/mondoohq/skills/tree/main/skills/mondoo-mql
+- https://github.com/mondoohq/cnquery

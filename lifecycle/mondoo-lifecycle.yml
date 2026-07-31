@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://mondoo.com
+versioning:
+  api:
+    scheme: continuous
+    note: >-
+      The Mondoo Platform API is a single GraphQL endpoint (/query) evolved
+      continuously rather than by numbered API versions; the Go client is marked
+      beta. GraphQL field deprecations are surfaced via @deprecated in the schema.
+  tools:
+    scheme: semver
+    note: cnquery and cnspec (and their Go modules) follow semantic versioning with tagged GitHub releases.
+status_page: https://status.mondoo.com
+status_page_provider: Atlassian Statuspage
+changelog:
+  cnspec: https://github.com/mondoohq/cnspec/releases
+  cnquery: https://github.com/mondoohq/cnquery/releases
+  artifact: changelog/mondoo-changelog.yml
+regions:
+- us
+- eu
