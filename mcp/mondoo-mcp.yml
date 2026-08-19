@@ -8,12 +8,10 @@ server:
   also_available:
   - transport: http
     note: 'exposed via: mql shell mcp http http://localhost:8080/mcp'
-  description: >-
-    Mondoo exposes an MCP (Model Context Protocol) server through its open-source
-    cnquery / cnspec CLIs and the MQL shell. Agents can run it locally to perform
-    live MQL schema lookup, query validation, and infrastructure/security queries
-    against the same graph-based data fabric that powers cnquery and cnspec. The
-    packaged mondoo-mql Agent Skill (github.com/mondoohq/skills) documents using
+  description: Mondoo exposes an MCP (Model Context Protocol) server through its open-source cnquery /
+    cnspec CLIs and the MQL shell. Agents can run it locally to perform live MQL schema lookup, query
+    validation, and infrastructure/security queries against the same graph-based data fabric that powers
+    cnquery and cnspec. The packaged mondoo-mql Agent Skill (github.com/mondoohq/skills) documents using
     these MCP tools for query development.
   launch:
   - cnquery mcp
@@ -31,3 +29,12 @@ tools:
 references:
 - https://github.com/mondoohq/skills/tree/main/skills/mondoo-mql
 - https://github.com/mondoohq/cnquery
+deployment:
+  mode: none
+  endpoint: http://localhost:8080/mcp
+  verified: probed
+  probe: dead
+  note: the endpoint this manifest claimed did not answer; recorded as none rather than deleted so the
+    claim stays auditable
+  checked: '2026-08-12'
+  source: catalog MCP census
