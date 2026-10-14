@@ -2,6 +2,7 @@ generated: '2026-10-14'
 method: searched
 checked:
 - https://github.com/marketplace?type=actions
+- splunk/integrations/splunk-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: GitHub Marketplace (actions)
@@ -21,5 +22,23 @@ edges:
   - Verified creator
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+- partner_name: Splunk (own)
+  partner: splunk
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://splunkbase.splunk.com/app/9567/
+  mirror_of: splunk/integrations/splunk-integration-edges.yml
+  apps:
+  - Mondoo App for Splunk Enterprise
+  - Mondoo Add-On (TA) for Splunk
+  listing_count: 2
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: app
 source:
 - https://github.com/marketplace?type=actions
