@@ -1,10 +1,17 @@
 generated: '2026-10-14'
 method: searched
 checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
 - https://focus.finops.org/data-generators/
 - https://github.com/cncf/k8s-conformance
 - https://github.com/cncf/landscape
 - https://github.com/marketplace?type=actions
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - splunk/integrations/splunk-integration-edges.yml
 marketplace_apps: []
 edges:
@@ -76,5 +83,62 @@ edges:
     detected: '2026-10-15'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
+- partner_name: Go module proxy
+  partner: null
+  partner_match: null
+  type: register
+  direction: provider-built
+  category: official SDK (Go)
+  evidence: https://pkg.go.dev/go.mondoo.com/cnquery
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: Go module proxy (public registry JSON)
+    spec_file: null
+    language: Go
+    packages:
+    - name: go.mondoo.com/cnquery
+      version: v0.0.0-20261018195917-d657ec8906d2
+      released: '2026-10-18'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/go.mondoo.com/cnquery
+      repo_leg: domain:mondoo.com
+      publisher_leg: module-path:mondoo.com
+      matched_by: domain
+    - name: go.mondoo.com/cnspec
+      version: v0.0.0-20261018142630-aeb334b8a993
+      released: '2026-10-18'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/go.mondoo.com/cnspec
+      repo_leg: domain:mondoo.com
+      publisher_leg: module-path:mondoo.com
+      matched_by: domain
+    - name: go.mondoo.com/mondoo-go
+      version: v0.0.0-20261017001141-ee1b22d4314d
+      released: '2026-10-17'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/go.mondoo.com/mondoo-go
+      repo_leg: domain:mondoo.com
+      publisher_leg: module-path:mondoo.com
+      matched_by: domain
+    - name: go.mondoo.com/mql
+      version: v0.0.0-20261018195917-d657ec8906d2
+      released: '2026-10-18'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/go.mondoo.com/mql
+      repo_leg: domain:mondoo.com
+      publisher_leg: module-path:mondoo.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 source:
 - https://github.com/marketplace?type=actions

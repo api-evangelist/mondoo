@@ -62,3 +62,60 @@
     detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
+- slug: mondoo-go-module-proxy
+  label: Go module proxy
+  partner_name: Go module proxy
+  category: official SDK (Go)
+  type: register
+  channel: package-registry
+  evidence: https://pkg.go.dev/go.mondoo.com/cnquery
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Go module proxy (public registry JSON)
+    spec_file: null
+    language: Go
+    packages:
+    - name: go.mondoo.com/cnquery
+      version: v0.0.0-20261018195917-d657ec8906d2
+      released: '2026-10-18'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/go.mondoo.com/cnquery
+      repo_leg: domain:mondoo.com
+      publisher_leg: module-path:mondoo.com
+      matched_by: domain
+    - name: go.mondoo.com/cnspec
+      version: v0.0.0-20261018142630-aeb334b8a993
+      released: '2026-10-18'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/go.mondoo.com/cnspec
+      repo_leg: domain:mondoo.com
+      publisher_leg: module-path:mondoo.com
+      matched_by: domain
+    - name: go.mondoo.com/mondoo-go
+      version: v0.0.0-20261017001141-ee1b22d4314d
+      released: '2026-10-17'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/go.mondoo.com/mondoo-go
+      repo_leg: domain:mondoo.com
+      publisher_leg: module-path:mondoo.com
+      matched_by: domain
+    - name: go.mondoo.com/mql
+      version: v0.0.0-20261018195917-d657ec8906d2
+      released: '2026-10-18'
+      released_field: Time
+      lapsed: false
+      page: https://pkg.go.dev/go.mondoo.com/mql
+      repo_leg: domain:mondoo.com
+      publisher_leg: module-path:mondoo.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
