@@ -64,6 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Mondoo is a company surfaced as a portfolio company of hv-capital and added to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment pipeline.
+Mondoo is a cloud-native security and vulnerability risk management platform built around "Agentic Vulnerability Management" — AI agents that discover, prioritize by business impact, and automatically remediate vulnerabilities and misconfigurations across cloud accounts, containers, Kubernetes, servers, endpoints, SaaS products, network devices, and infrastructure-as-code. The platform is built on the open-source cnquery infrastructure query tool and the cnspec policy-as-code security scanner, both driven by MQL (the Mondoo Query Language), and exposes a GraphQL Platform API for programmatic access to assets, integrations, and vulnerability, policy, and compliance reports. Mondoo ships official SDKs, a Terraform provider, cnquery/cnspec CLIs with an MCP server interface, and packaged Agent Skills for MQL and secure coding.
 
-Backed by: hv-capital
+**Areas:** Company · Cybersecurity · Security · Vulnerability Management · Compliance · Cloud Security · Policy as Code · DevSecOps · GraphQL · SAST
+
+## Mondoo on APIs.io
+
+Everything profiled for Mondoo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mondoo/](https://apis.io/providers/mondoo/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Mondoo Platform GraphQL API](https://apis.io/apis/mondoo/mondoo-platform-graphql-api/) — The Mondoo Platform API is a GraphQL API for programmatically querying assets, configuring integrations, and fetching vulnerability, policy, and compliance…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [mondoo-cnquery](https://apis.io/servers/mondoo/mondoo-cnquery/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mondoo Authentication](https://apis.io/security/mondoo/mondoo-authentication/)
+- [Mondoo Domain Security](https://apis.io/security/mondoo/mondoo-domain-security/)
+- [Mondoo Vulnerability Disclosure](https://apis.io/security/mondoo/mondoo-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://mondoo.com)
+- [Documentation](https://mondoo.com/docs)
+- [Getting started](https://mondoo.com/docs/platform/maintain/access/service_accounts/)
+- [Pricing](https://mondoo.com/pricing)
+- [Sign up](https://console.mondoo.com)
+- [Support](https://mondoo.com/contact)
+- [Blog](https://mondoo.com/blog)
+- [Security](https://github.com/mondoohq/.github/blob/main/SECURITY.md)
+- [Terms of service](https://mondoo.com/terms)
+- [Privacy policy](https://mondoo.com/privacy)
+- [GitHub](https://github.com/mondoohq)
+- [Status](https://status.mondoo.com)
+
+## API Evangelist rating
+
+**Kin Score 38.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 44.7 |
+| Developer ergonomics | 71.4 |
+| Access clarity | 31.6 |
+
+**Agent readiness 10.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mondoo/](https://apis.io/providers/mondoo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Mondoo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mondoo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
